@@ -21,7 +21,7 @@
             <div class="header__contacts">
                <a class="header__phone" href="tel:380963092145">+38 (096) 309 21 45 </a>
                <a class="header__email" href="#">layout585@gmail.com  </a>
-               <a data-fancybox data-src="#modal1" href="javascript:;" class="header__btn" href="#">Бесплатная консультация</a>
+               <a class="header__btn" href="#modal">Бесплатная консультация</a>
             </div>
          </div>
       </div>
@@ -318,7 +318,7 @@
          </div>
       </div>
    </section>
-   <footer class="footer">
+   <footer id="footer" class="footer">
       <div class="footer__content">
          <div class="container">
             <div class="footer__inner">
@@ -329,7 +329,7 @@
                   <div class="footer__text">
                      Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.
                   </div>
-                  <a data-fancybox data-src="#modal1" href="javascript:;" class="header__btn" href="#">Бесплатная консультация</a>
+                  <a class="header__btn" href="#modal">Бесплатная консультация</a>
                   <ul class="footer__list">       
                      <li><a class="footer__phone" href="tel:380963092145">+38 (096) 309 21 45</a></li>
                      <li><a href="#">layout585@gmail.com</a></li>
@@ -351,15 +351,25 @@
       </div>
    </footer>
 
-   <div id="modal">
-      <div>Hello!</div>
-      <p>You are awesome!</p>
+   <div id="modal" class="modal">
+      <a href="#modal__bind" class="modal__area"></a>
+      <div class="modal__body">
+         <div class="modal__content">
+            <a href="#modal__bind" class="modal__close">x</a>
+            <form>
+               <input type="text" placeholder="Ваше имя">
+               <input type="text" placeholder="Ваш телефон">
+               <input type="submit" placeholder="Отправить">
+            </form>
+         </div>         
+      </div>     
    </div>
+   <div id="modal__bind" class="modal__bind"></div>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-   <script src="js/jquery.fancybox.min.js"></script>
+   <!-- <script src="js/jquery.fancybox.min.js"></script> -->
    <script src="js/slick.min.js"></script>
-   <script src="js/jquery.formstyler.min.js"></script>
+   <!-- <script src="js/jquery.formstyler.min.js"></script> -->
    <script src="js/main.js"></script>
 </body>
 </html>

@@ -123,10 +123,6 @@ body {
    padding-left: 10px;
 }
 
-#modal {
-   display: none;
-}
-
 .slider {
    background-image: url(../img/slider_bg.jpg);
    background-repeat: no-repeat;
@@ -700,6 +696,7 @@ body {
 .footer__inner .header__btn {
    float: none;
    display: inline-block;
+   margin-bottom: 10px;
 }
 
 .footer__info {
@@ -774,4 +771,69 @@ body {
 
 .copy__text {
    color: #fff;
+}
+
+.modal__bind {
+   width: 1px;
+   height: 1px;
+   color: transparent;
+   display: none;
+}
+
+.modal {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.2);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 4;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all 0.8s ease 0s;
+}
+
+.modal__area {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.modal:target {
+   opacity: 1;
+   visibility: visible;
+}
+
+.modal__body {
+   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal__content {
+   background-color: #fff;
+   padding: 30px 30px;
+   position: relative;
+}
+
+.modal input {
+   display: block;
+   width: 100%;
+   margin-bottom: 20px;
+   outline: none;
+   height: 40px;
+   border: 1px solid #ebebeb;
+   padding: 0px 10px;
+}
+
+.modal__close {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   font-size: 20px;
 }
