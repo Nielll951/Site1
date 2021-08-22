@@ -27,6 +27,10 @@
       display: block;
    }
 
+   .form {
+      padding-bottom: 25px;
+   }
+
    .services__title-box,
    .form__title-box,
    .news__title-box {
@@ -59,6 +63,15 @@
 
    .form__box-inner .jq-selectbox__select {
       margin-bottom: 10px;
+   }
+
+   .advantages__inner {
+      display: block;
+   }
+
+   .advantages__item {
+      max-width: 100%;
+      margin-bottom: 30px;
    }
 }
 
@@ -124,6 +137,12 @@
 
    .slider__text {
       font-size: 16px;
+   }
+}
+
+@media (max-width: 400px) {
+   .advantages__item {
+      padding: 0;
    }
 }
 
