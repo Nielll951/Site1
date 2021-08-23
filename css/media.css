@@ -222,11 +222,53 @@
    .advantages__item {
       padding: 0;
    }
+
+   .form {
+      padding-top: 30px;
+   }
+
+   .form__title-box {
+      margin-bottom: 20px;
+   }
+
+   .news {
+      padding-top: 30px;
+      padding-bottom: 5px;
+   }
+
+   .news__top {
+      margin-bottom: 40px;
+   }
+
+   .services {
+      padding: 30px 0;
+   }
+
+   .services__top {
+      margin-bottom: 50px;
+   }
+
+   .services__item {
+      margin: 15px auto;
+      padding: 25px 0px 25px;
+      min-height: 350px;
+   }
+
+   .services__item-title {
+      padding-top: 15px;
+      padding-bottom: 10px;
+   }
 }
 
 @media (max-width: 382px) {
    .header__phone {
       padding-right: 20px;
+   }
+}
+
+@media (max-width: 325px) {
+   form .default-btn {
+      line-height: 12px;
    }
 }
 
