@@ -46,6 +46,10 @@ body {
    position: relative;
 }
 
+.header__btn:hover {
+   background-color: #ffda22;
+}
+
 .header__btn::before {
    content: "\f0b1";
    font-family: 'icons' !important;
@@ -195,6 +199,10 @@ body {
    cursor: pointer;
    outline: none;
    background-color: #ffc222;
+}
+
+.slick-btn:hover {
+   background-color: #ffda22;
 }
 
 .slick-btn.slick-disabled {
