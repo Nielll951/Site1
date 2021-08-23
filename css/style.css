@@ -173,6 +173,7 @@ body {
    border-right-width: 20px;
    position: relative;
    outline: none;
+   cursor: pointer;
 }
 
 .default-btn:after {
